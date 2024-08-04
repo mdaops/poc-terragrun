@@ -19,10 +19,10 @@ variable "region" {
   default     = "europe-west1"
 }
 
-variable "folder_id" {
-  description = "The folder ID to create the project in"
-  type        = string
-}
+# variable "folder_id" {
+#   description = "The folder ID to create the project in"
+#   type        = string
+# }
 
 variable "billing_account" {
   description = "The billing account to associate with the project"
