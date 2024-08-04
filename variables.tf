@@ -1,4 +1,3 @@
-
 variable "project_id" {
   description = "The ID of the project"
   type        = string
@@ -17,7 +16,7 @@ variable "owner" {
 variable "region" {
   description = "The default region for resources"
   type        = string
-  default     = "us-central1"
+  default     = "europe-west1"
 }
 
 variable "folder_id" {
@@ -28,14 +27,4 @@ variable "folder_id" {
 variable "billing_account" {
   description = "The billing account to associate with the project"
   type        = string
-}
-
-output "project_id" {
-  value       = google_project.project.project_id
-  description = "The ID of the created project"
-}
-
-output "project_number" {
-  value       = google_project.project.number
-  description = "The number of the created project"
 }
