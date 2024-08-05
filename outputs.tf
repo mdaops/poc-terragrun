@@ -7,3 +7,7 @@ output "project_number" {
   value       = google_project.project.number
   description = "The number of the created project"
 }
+
+output "billing_account" {
+  value = var.billing_account
+}
