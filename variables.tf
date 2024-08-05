@@ -3,6 +3,11 @@ variable "project_id" {
   type        = string
 }
 
+variable "org_id" {
+  description = "The ID of the org"
+  type        = string
+}
+
 variable "repository_name" {
   description = "The name of the repository"
   type        = string
