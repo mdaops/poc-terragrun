@@ -13,7 +13,7 @@ provider "google" {
 }
 
 resource "google_project" "project" {
-  name            = var.repository_name
+  name            = var.project_id
   project_id      = var.project_id
   billing_account = var.billing_account
   org_id          = var.org_id
